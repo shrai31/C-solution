@@ -5,11 +5,13 @@ using namespace std;
 
 int printTribRec(int n)
 {
-	if (n == 0 || n == 1 || n == 2)
-		return 0;
+	if (n == 0 || n == 1)
+		return n;
 
-	if (n == 3)
+    if ( n == 2)
 		return 1;
+	if (n == 3)
+		return 2;
 	else
 		return printTribRec(n - 1) +
 			printTribRec(n - 2) +
